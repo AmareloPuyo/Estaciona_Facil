@@ -144,6 +144,19 @@ function buscaStorage() {
                                     <p>Valor Total: <span>${formatoBRL}</span> </p>
                                    
                                     <button>Finalizar</button>`
+
+                // teste 
+                const corpo = document.querySelector('html')
+                corpo.addEventListener("click", (e) => {
+                    console.log(e.target)
+                    if (e.target !== cardFin && e.target !== btnfinal) {
+                        cardFin.classList.add('hide')
+                        cardFin.classList.remove('active')
+                        window.location.reload()
+                    }
+
+                })
+
                 // finalizando o Card e apagando o registro 
                 const btnFinTela = document.querySelector(".tela-finalizar button");
 
