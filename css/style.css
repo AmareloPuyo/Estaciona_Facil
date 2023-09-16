@@ -28,7 +28,9 @@ body{
 }
 main{
     width: 90%;
-    height: 80vh;
+    min-height:min-content;
+    margin-top: 6em;
+    margin-bottom: 2em;
     background-color:#fdfdfd ;
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -66,6 +68,7 @@ header{
     margin-top: 28px;
     grid-row: 3 / 4; 
     grid-column: 1 / 2;
+    position: relative;
 }
 
 header h3{
@@ -142,7 +145,15 @@ header h3{
     cursor: pointer;
     border: none;
 }
-
+#btn-ok{
+    position: absolute;
+    width: 90px;
+    padding: 0;
+    left: 170px;
+    bottom: 40px;
+    border: 1px solid rgb(145, 145, 219);
+    border-radius: 0 5px 5px 0;
+}
 
 /* -----------------------------------------------*/
 
@@ -178,4 +189,37 @@ header h3{
 }
 .active{
     display:flex
+}
+
+/* ------------------------ */
+.tela-finalizar{
+    font-weight: bold;
+    position: absolute;
+    background-color: #f7f3f3;
+    width: 350px;
+    height: 400px;
+    padding: 40px;
+    line-height: 2.2em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 3px 3px 5px rgb(168, 143, 143);
+    text-transform: uppercase;
+}
+.tela-finalizar span{
+    font-weight: normal;
+}
+.tela-finalizar button{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fdfdfd;
+    font-weight: 600;
+    width: 100%;
+    min-height: 35px;
+    border-radius: 5px;
+    border: none;
+    background:linear-gradient(180deg, rgb(196, 230, 146), rgb(87, 138, 87))
+}
+.tela-finalizar button:hover{
+    opacity: .8;
 }
