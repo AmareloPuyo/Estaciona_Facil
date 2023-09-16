@@ -169,6 +169,7 @@ header h3{
 
 .vaga{
     background-color: rgb(154, 196, 154);
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,6 +181,7 @@ header h3{
     height: 200px;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 10px;
 }
 .border-botom{
     border-bottom: 1px solid black;
